@@ -29,7 +29,7 @@ var connection = mysql.createConnection({
   database : 'elmsoftware'
 });
 
-connection.connect();
+// connection.connect();
 app.use('/email', bodyParser.urlencoded({
     extended: true
 }));
