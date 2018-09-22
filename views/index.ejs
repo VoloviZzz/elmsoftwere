@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>ELMsoftware</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=VT323'>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron:500'> -->
+
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/modernizr-2.7.1.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li><a href="#pricing" class="scroll">Pricing</a></li>
+            <li><a href="#">Sign in</a></li> -->
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6">
+            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+          </div>
+          <div class="col-xs-6 signin text-right navbar-nav">
+            <!-- <a href="#pricing" class="scroll">Pricing</a>&nbsp; &nbsp;<a href="#">Sign in</a> -->
+          </div>
+        </div>
+
+        <div class="row header-info">
+          <div class="col-sm-10 col-sm-offset-1 text-center">
+            <h1 class="wow fadeIn">Elementary software</h1>
+            <br />
+            <p class="lead wow fadeIn" data-wow-delay="0.5s">Молодая и перспективная компания по разработке мобильных приложений<br>
+            ELMsoftware - это новый уровень качества и креатива</p>
+            <br />
+
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <div class="row">
+                  <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s">
+                    <a href="#exemple" class="btn btn-secondary btn-lg scroll">Наши приложения</a>
+                  </div>
+                  <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
+                    <a href="#pricing" class="btn btn-primary btn-lg scroll">Заказать под ключ</a>
+                  </div>
+                </div><!--End Button Row-->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mouse-icon hidden-xs">
+				<div class="scroll"></div>
+			</div>
+
+    <section id="be-the-first" class="pad-xl">
+      <div id="exemple">
+
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text-center margin-30 wow fadeIn" data-wow-delay="0.3s">
+            <h2 >Например</h2>
+            <p class="lead">Наше приложение <a href="https://play.google.com/store/apps/details?id=com.elmsoftware.madtaxi.qpmdjm">MadTaxi</a></p>
+          </div>
+          <div class="col-sm-8 col-sm-offset-2 text-center margin-30 wow fadeIn" data-wow-delay="0.3s">
+            <div class="icons-apps">
+              <div class="icon-app" data-id="1">
+                <img src="img/logoMT.png" alt="MadTaxi">
+              </div>
+              <div class="icon-app non-select" data-id="0">
+                <img src="img/logoSN.png" alt="SmartNote">
+              </div>
+            </div>
+
+            <!-- <p class="lead">Наше приложение <a href="https://play.google.com/store/apps/details?id=com.elmsoftware.madtaxi.qpmdjm">MadTaxi</a></p> -->
+          </div>
+        </div>
+
+        <div class="iphone wow fadeInUp" data-wow-delay=".5s">
+          <img class="photo-phone smartNote" data-id="0" src="img/smartNote.png" style="display: none">
+	        <img class="photo-phone" data-id="1" src="img/iphone.png">
+          <div class="img-phone photo-phone" data-id="1">
+
+          <script>
+            var timerdigits = 1;
+          </script>
+
+          <!-- _________________game______________________ -->
+          <div class="game-madtaxi">
+
+          <div class="controls">
+            <div class="rotatePhone"><img src="img/rotatePhone.png" alt=""></div>
+            <div class="loader">
+              <div class="circul"></div>
+            </div>
+            <div class="toast">
+              <div class="error" onclick="$('.toast .error').hide(300)" style="display: none">
+                <div class="text">You do not have enough money to buy this car.</div>
+                <img src="img/brick_white_halt-on-brick_octagon.png" alt="">
+              </div>
+              <div class="success" style="display: none">
+                <div class="text"></div>
+                <img src="img/brick_white_halt-on-brick_octagon.png" alt="">
+              </div>
+            </div>
+
+            <div class="left"><img src="img/flatDark23.png"></div>
+            <div class="right"><img src="img/flatDark24.png"></div>
+            <div class="up"><img src="img/flatDark25.png"></div>
+            <div class="down"><img src="img/flatDark26.png"></div>
+          </div>
+            <div class="wall-bg">
+              <ul>
+                <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+              </ul>
+              <div class="wall-poster">
+                <h1 id="wanna_cash" >MAD <span>TAXI</span></h1>
+                <i class="mr-akabei">
+                  <div class="mr-akabei-content">
+                    <span class="mr-akabei-eye-first" onclick="music_toggle(this)">
+                      <div class="line"></div>
+                      <img src="img/95159_music_512x512.png" alt="Music">
+                    </span>
+                    <span class="mr-akabei-eye-second" onclick="sound_toggle(this)">
+                      <div class="line"></div>
+                      <img src="img/708982_music_512x512.png" alt="Sound Effects">
+                    </span>
+                    <span class="mr-akabei-bottom-1"></span>
+                    <span class="mr-akabei-bottom-2"></span>
+                    <span class="mr-akabei-bottom-3"></span>
+                    <span class="mr-akabei-bottom-4"></span>
+                    <span class="mr-akabei-bottom-5"></span>
+                    <span class="mr-akabei-bottom-6"></span>
+                    <span class="mr-akabei-bottom-7"></span>
+                  </div>
+                  <i class="point-first"></i>
+                  <i class="point-second"></i>
+                  <i class="point-third"></i>
+                  <i class="point-four"></i>
+                  <i class="point-last"></i>
+                </i>
+                <i class="mr-pacman">
+                  <i class="point-first"></i>
+                  <i class="point-second"></i>
+                  <i class="point-third"></i>
+                  <i class="point-four"></i>
+                </i>
+                <span onclick="show_shop(this);">shop?</span>
+              </div>
+              <div class="wall-desk">
+                <div class="timer">
+                  <i class="timer-shadow"></i>
+                  <div class="timer-content">
+                    <div class="timer-hr">
+                      <div class="timer-digits" onclick="if (timerdigits > 1) {
+                        timerdigits--;
+                      }else {
+                        timerdigits++;
+                      }
+                      ;"></div>
+                    </div>
+                    <i class="timer-hr-right"></i>
+                  </div>
+                  <i class="timer-right"></i>
+                  <i class="timer-hr-first"></i>
+                  <i class="timer-hr-second"></i>
+                  <i class="timer-hr-third"></i>
+                  <i class="timer-hr-last"></i>
+                </div>
+                <i class="wall-desk-shadow"></i>
+                <i class="wall-desk-bottom"></i>
+                <i class="wall-desk-front"></i>
+                <i class="wall-desk-right"></i>
+              </div>
+            </div>
+            <div class="floor-bg"><div class="floor-hr"><i></i></div></div>
+
+            <div class="tv-content">
+              <div class="tv">
+                <div class="tv-top"><i class="item-left"></i><i class="item-right"></i></div>
+                <div class="tv-shadow"></div>
+                <div class="tv-right"></div>
+                <div class="tv-bottom">
+                  <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+                  <i></i>
+                </div>
+                <div class="tv-screen">
+                  <div class="gameStop" onclick="G.gameOver()">
+                    <img src="img/seo-social-web-network-internet_322_icon-icons.com_61532.png" alt="">
+                  </div>
+                  <a href="" class="pw-btn"></a>
+                  <div class="tv-hr">
+                    <div class="tv-hr-2">
+                      <div class="tv-hr-3">
+                        <div class="tv-glass">
+                          <div onclick="start(this);" class="start">
+                            <span>START</span>
+                          </div>
+
+                          <canvas></canvas>
+                          <div class="tv-glass-vintage">
+                            <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+
+                            <i class="tv-noise"></i><i class="tv-noise-second"></i>
+                            <i class="tv-glow"></i>
+                            <div class="police-indecator" style="display: none;">
+                              <img src="img/zvezdia-517.gif" alt="">
+                              <div class="police-timer" style="display: none;">0</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tv-flashing">
+                          <i class="tv-flashing-left"></i>
+                          <i class="tv-flashing-bottom"></i>
+                          <i class="tv-flashing-bottom-placeholder"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="shop-list">
+                <div class="shop-btns">
+                  <div class="shop-btn black" data-cat="map">
+                      <img src="img/261205.png" alt="">
+                  </div>
+                  <div class="shop-btn" data-cat="car">
+                      <img src="img/syl3d.png" alt="">
+                  </div>
+                  <div class="shop-btn" data-cat="lock">
+                      <img src="img/unnamed.png" alt="">
+                  </div>
+                </div>
+                <div class="map shop-item">
+                  <img src="img/map1.png" alt="">
+                  <img src="img/unnamed.png" alt="" style="display:none">
+                </div>
+                <div class="map shop-item black">
+                  <img src="img/map1.png" alt="">
+                  <img src="img/unnamed.png" alt="">
+                </div>
+                <div class="map shop-item black">
+                  <img src="img/map1.png" alt="">
+                  <img src="img/unnamed.png" alt="">
+                </div>
+
+                <div class="lock shop-item black" style="display:none">
+                  <img src="img/map1.png" alt="">
+                  <img src="img/unnamed.png" alt="">
+                </div>
+                <div class="lock shop-item black" style="display:none">
+                  <img src="img/map1.png" alt="">
+                  <img src="img/unnamed.png" alt="">
+                </div>
+                <div class="lock shop-item black" style="display:none">
+                  <img src="img/map1.png" alt="">
+                  <img src="img/unnamed.png" alt="">
+                </div>
+
+                <div class="cars-list">
+                  <div class="car shop-item" style="display:none">
+                    <img class="pic select" data-name="yellow" data-id="0" src="img/car1.png" alt="">
+                    <img class="block" src="img/unnamed.png" alt="" style="display:none">
+                    <div class="prise"><span>0</span>$</div>
+                    <div class="name">YaTaxi</div>
+                  </div>
+                  <div class="car shop-item black" style="display:none">
+                    <img class="pic" src="img/car2.png" data-name="black" data-id="1" alt="">
+                    <img class="block" src="img/unnamed.png" alt="">
+                    <div class="prise"><span>500</span>$ <br> +30% cash</div>
+                    <div class="name">Uber Black</div>
+                  </div>
+                  <div class="car shop-item black" data-name="white" style="display:none">
+                    <img class="pic" src="img/car3.png" data-name="lpr" data-id="2" alt="">
+                    <img class="block" src="img/unnamed.png" alt="">
+                    <div class="prise"><span>1100</span>$ <br>+30% speed <br>+50% freedom</div>
+                    <div class="name">Libertarian Car</div>
+                  </div>
+                  <div class="car shop-item black" data-name="polise" style="display:none">
+                    <img class="pic" src="img/car4.png" data-name="polise" data-id="3" alt="">
+                    <img class="block" src="img/unnamed.png" alt="">
+                    <div class="prise"><span>3100</span>$ <br>+police ignore</div>
+                    <div class="name">Police Car</div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="tv-desk">
+                <i class="tv-desk-shadow"></i>
+                <i class="tv-desk-item-left-shadow"></i>
+                <i class="tv-desk-item-left"></i>
+                <i class="tv-desk-item-right-shadow"></i>
+                <i class="tv-desk-item-right"></i>
+                <i class="tv-desk-item-rear-shadow"></i>
+                <i class="tv-desk-item-rear"></i>
+                <i class="tv-desk-top"></i>
+                <i class="tv-desk-front"></i>
+                <i class="tv-desk-right"></i>
+              </div>
+            </div>
+
+            <div class="console">
+              <i class="console-shadow"></i>
+              <div class="console-top">
+                <i class="console-game-top"></i>
+                <div class="console-top-panel">
+                  <i class="console-top-panel-item-1"></i>
+                  <i class="console-top-panel-item-2"></i>
+                  <i class="console-top-panel-item-3"></i>
+                  <i class="console-top-panel-item-4"></i>
+                  <i class="console-top-panel-item-5"></i>
+                  <i class="console-top-panel-item-6"></i>
+                  <i class="console-top-panel-item-7"></i>
+                  <i class="console-top-panel-item-8"></i>
+                </div>
+              </div>
+              <i class="console-right-top"></i>
+              <i class="console-right-bottom"></i>
+              <div class="console-front-panel">
+                <div class="front-panel-top">
+                  <i class="console-game"></i>
+                  <i class="console-power-dark"></i>
+                </div>
+                <div class="front-panel-bottom">
+                  <i class="console-power-indicator"></i>
+                  <i class="console-btn-first"></i>
+                  <i class="console-btn-second"></i>
+                  <div class="console-power">
+                    <div class="console-power-plug"><i></i></div>
+                    <i class="console-power-cable"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script src='js/jquery-3.2.1.min.js'></script>
+        <script src='js/webaudiox.js'></script>
+        <script>
+
+
+
+        var sounds1  = new WebAudiox.GameSounds();
+        var sounds  = new WebAudiox.GameSounds();
+        var error;
+        var fuck_the_police;
+        var fuck_the_police2;
+        var police_wrong = false;
+
+        function start(e) {
+          G.restart();
+          // G.menu = null;
+          $('html').addClass('show-player');
+          $(e).hide(200);
+          $('.left').show(200);
+          $('.right').show(200);
+          $('.up').show(200);
+          $('.down').show(200);
+          $('.start').css('left', '34.5%');
+          $('.tv-screen').css('transform', 'scale(2)');
+          setTimeout(function () {
+            $('.gameStop').show(200);
+          }, 1000);
+        }
+
+
+
+        </script>
+
+
+        </div>
+      </div>
+      <!-- _________________game______________________ -->
+    </div>
+
+    </section>
+
+    <section id="main-info" class="pad-xl">
+	    <div class="container">
+		    <div class="row">
+			    <div class="col-sm-4 wow fadeIn" data-wow-delay="0.2s">
+				    <hr class="line purple">
+				    <h3>Мобильные игры</h3>
+				    <p>Наша компания разрабатывает казуальные мобильные игры под Android</p>
+			    </div>
+			    <div class="col-sm-4 wow fadeIn" data-wow-delay="0.4s">
+				    <hr  class="line blue">
+				    <h3>Мобильные приложения</h3>
+				    <p>Приложения для упрощения и отимизации множества жизненных задач</p>
+			    </div>
+			    <div class="col-sm-4 wow fadeIn" data-wow-delay="0.6s">
+				    <hr  class="line yellow">
+				    <h3>Приложения под ключ</h3>
+				    <p>Мы разработаем мобильное приложение или сайт под ваши задачи</p>
+			    </div>
+		    </div>
+	    </div>
+    </section>
+
+
+    <!--Pricing-->
+    <section id="pricing" class="pad-lg">
+      <div class="container">
+        <div class="row margin-40">
+          <div class="col-sm-8 col-sm-offset-2 text-center">
+            <h2 class="white">Заказать приложение</h2>
+            <p class="white">Мы разработаем мобильное приложение или сайт под ваши задачи</p>
+          </div>
+        </div>
+
+        <div class="row margin-50">
+
+          <div class="col-sm-4 pricing-container wow fadeInUp" data-wow-delay="0.5s">
+            <br />
+            <ul class="list-unstyled pricing-table text-center">
+    					<li class="headline"><h5 class="white">Мобильное приложение</h5></li>
+    					<li class="price"><div class="amount">$500</div></li>
+    					<li class="info">Разработка мобильного приложения для ваших целей</li>
+    					<li class="features first">>Разработка мобильной игры под Android с использование передовых технологий</li>
+    					<li class="features">Поддержка устройств начиная с версии 4.4</li>
+    					<li class="features">Поддержка планшетов</li>
+    					<li class="features last btn btn-secondary btn-wide"><a href="#">Заказать</a></li>
+    				</ul>
+          </div>
+
+          <div class="col-sm-4 pricing-container wow fadeInUp" data-wow-delay="0.4s">
+            <ul class="list-unstyled pricing-table active text-center">
+    					<li class="headline"><h5 class="white">Мобильная игра</h5></li>
+    					<li class="price"><div class="amount">$800</div></li>
+    					<li class="info">Разработка мобильной игры под Android с использование передовых технологий</li>
+    					<li class="features first">Поддержка устройств начиная с версии 4.4</li>
+    					<li class="features">Максимальная производительность</li>
+    					<li class="features">Поддержка планшетов</li>
+    					<li class="features">Web версия</li>
+    					<li class="features last btn btn-secondary btn-wide"><a href="#">Заказать</a></li>
+    				</ul>
+          </div>
+
+          <div class="col-sm-4 pricing-container wow fadeInUp" data-wow-delay="0.5s">
+            <br />
+            <ul class="list-unstyled pricing-table text-center">
+    					<li class="headline"><h5 class="white">Сайт</h5></li>
+    					<li class="price"><div class="amount">$200<small></small></div></li>
+    					<li class="info">Разработка лендинга или магазина для вашей компании</li>
+    					<li class="features">Встроенная CMS</li>
+              <li class="features first">Адаптированны под мобильные устройства</li>
+    					<li class="features">SMM</li>
+    					<li class="features last btn btn-secondary btn-wide"><a href="#">Заказать</a></li>
+    				</ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="invite" class="pad-lg light-gray-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text-center">
+            <i class="fa fa-envelope-o margin-40"></i>
+            <h2 class="black">Подписаться на уведомления</h2>
+            <br />
+            <p class="black">Подпишитель на уведомления о наших новых мобильных игр и приложений</p>
+            <br />
+
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <!-- <form role="form"> -->
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+                  </div>
+                  <button class="send-email btn btn-primary btn-lg">Подписаться</button>
+                <!-- </form> -->
+              </div>
+            </div><!--End Form row-->
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-8 margin-20">
+            <ul class="list-inline social">
+              <li>Connect with us on</li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-4 text-right">
+            <p><small>Copyright &copy; 2018. All rights reserved. <br>
+	            Created by <a href="http://visualsoldiers.com">ELMsoftware</a></small></p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script  src="js/index.js"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter50441560 = new Ya.Metrika2({
+                        id:50441560,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks2");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/50441560" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    </body>
+</html>
