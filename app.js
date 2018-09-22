@@ -24,7 +24,7 @@ app.get('/', function (req, res, next) {
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
   host     : 'localhost',
-  user     : 'root',
+  user     : 'app',
   password : '1234567',
   database : 'elmsoftware'
 });
